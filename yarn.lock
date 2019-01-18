@@ -1672,6 +1672,11 @@ builtin-status-codes@^3.0.0:
   resolved "http://registry.npm.taobao.org/builtin-status-codes/download/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
+bulma-jupiter@^0.1.2:
+  version "0.1.2"
+  resolved "http://registry.npm.taobao.org/bulma-jupiter/download/bulma-jupiter-0.1.2.tgz#9dd90767636d7c7a0953e4059676e23f814133c8"
+  integrity sha1-ndkHZ2NtfHoJU+QFlnbiP4FBM8g=
+
 cac@^6.3.9:
   version "6.4.0"
   resolved "http://registry.npm.taobao.org/cac/download/cac-6.4.0.tgz#cf23dff1ac1492ec7401f7a64de66a705b2f2bf5"
@@ -5254,6 +5259,13 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+onigasm@^2.2.1:
+  version "2.2.1"
+  resolved "http://registry.npm.taobao.org/onigasm/download/onigasm-2.2.1.tgz#d56da809d63d3bb25510e8b8e447ffe98e56bebb"
+  integrity sha1-1W2oCdY9O7JVEOi45Ef/6Y5Wvrs=
+  dependencies:
+    lru-cache "^4.1.1"
+
 only@~0.0.2:
   version "0.0.2"
   resolved "http://registry.npm.taobao.org/only/download/only-0.0.2.tgz#2afde84d03e50b9a8edc444e30610a70295edfb4"
@@ -6559,6 +6571,30 @@ shebang-regex@^1.0.0:
   resolved "http://registry.npm.taobao.org/shebang-regex/download/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
+shiki-languages@^0.1.0:
+  version "0.1.0"
+  resolved "http://registry.npm.taobao.org/shiki-languages/download/shiki-languages-0.1.0.tgz#ad2688ffc6b0bab5a61c0ad5785fefbdb889d3e2"
+  integrity sha1-rSaI/8awurWmHArVeF/vvbiJ0+I=
+  dependencies:
+    vscode-textmate "https://github.com/octref/vscode-textmate"
+
+shiki-themes@^0.1.1:
+  version "0.1.1"
+  resolved "http://registry.npm.taobao.org/shiki-themes/download/shiki-themes-0.1.1.tgz#d1d35af4b2baf505fc899c957491c538bd061625"
+  integrity sha1-0dNa9LK69QX8iZyVdJHFOL0GFiU=
+  dependencies:
+    vscode-textmate "https://github.com/octref/vscode-textmate"
+
+shiki@^0.1.2:
+  version "0.1.2"
+  resolved "http://registry.npm.taobao.org/shiki/download/shiki-0.1.2.tgz#ce12f70a638d9780945d59d6423b5d606b4a010f"
+  integrity sha1-zhL3CmONl4CUXVnWQjtdYGtKAQ8=
+  dependencies:
+    onigasm "^2.2.1"
+    shiki-languages "^0.1.0"
+    shiki-themes "^0.1.1"
+    vscode-textmate "https://github.com/octref/vscode-textmate"
+
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "http://registry.npm.taobao.org/signal-exit/download/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
@@ -7457,6 +7493,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+"vscode-textmate@https://github.com/octref/vscode-textmate":
+  version "4.0.1"
+  resolved "https://github.com/octref/vscode-textmate#e65aabe2227febda7beaad31dd0fca1228c5ddf3"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.1"
   resolved "http://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.1.tgz#b2d3d95402a811602380783ea4f566eb875569a2"
@@ -7530,6 +7570,13 @@ vuepress-html-webpack-plugin@^3.2.0:
     tapable "^1.0.0"
     toposort "^1.0.0"
     util.promisify "1.0.0"
+
+vuepress-plugin-shiki@^0.1.2:
+  version "0.1.2"
+  resolved "http://registry.npm.taobao.org/vuepress-plugin-shiki/download/vuepress-plugin-shiki-0.1.2.tgz#42ad5e91dcb06277a85db23328278ccebf45c244"
+  integrity sha1-Qq1ekdywYneoXbIzKCeMzr9FwkQ=
+  dependencies:
+    shiki "^0.1.2"
 
 vuepress@^1.0.0-alpha.32:
   version "1.0.0-alpha.32"

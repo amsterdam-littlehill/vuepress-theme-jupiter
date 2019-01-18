@@ -22,9 +22,11 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.6.3",
+    "bulma-jupiter": "^0.1.2",
     "dayjs": "^1.8.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "vuepress": "^1.0.0-alpha.32"
+    "vuepress": "^1.0.0-alpha.32",
+    "vuepress-plugin-shiki": "^0.1.2"
   }
 }
