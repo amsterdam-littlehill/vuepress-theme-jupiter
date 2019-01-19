@@ -17,3 +17,7 @@ module.exports = {
 ```
 
 See the [documentation of VuePress](https://vuepress.vuejs.org/theme/using-a-theme.html) for more information.
+
+## Features
+- Built-in LaTeX support
+- Code highlight by [octref/shiki](https://github.com/octref/shiki)
