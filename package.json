@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-jupiter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple theme for VuePress",
   "main": "index.js",
   "author": "Zilong Liang",
@@ -17,8 +17,9 @@
     "url": "git+https://github.com/zlliang/vuepress-theme-jupiter.git"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:link": "yarn link && yarn link vuepress-theme-jupiter",
+    "docs:dev": "yarn docs:link && vuepress dev docs",
+    "docs:build": "yarn docs:link && vuepress build docs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.6.3",
@@ -30,7 +31,5 @@
     "vuepress-plugin-latex": "^0.1.0",
     "vuepress-plugin-shiki": "^0.1.2"
   },
-  "devDependencies": {
-    "vuepress-theme-jupiter": "^0.1.0"
-  }
+  "devDependencies": {}
 }

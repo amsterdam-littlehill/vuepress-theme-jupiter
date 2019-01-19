@@ -7605,20 +7605,6 @@ vuepress-plugin-shiki@^0.1.2:
   dependencies:
     shiki "^0.1.2"
 
-vuepress-theme-jupiter@^0.1.0:
-  version "0.1.0"
-  resolved "http://registry.npm.taobao.org/vuepress-theme-jupiter/download/vuepress-theme-jupiter-0.1.0.tgz#ceb4b5781898053a7181f0ab9bef1a21bf9460e3"
-  integrity sha1-zrS1eBiYBTpxgfCrm+8aIb+UYOM=
-  dependencies:
-    "@fortawesome/fontawesome-free" "^5.6.3"
-    bulma-jupiter "^0.1.2"
-    dayjs "^1.8.0"
-    node-sass "^4.11.0"
-    sass-loader "^7.1.0"
-    vuepress "^1.0.0-alpha.32"
-    vuepress-plugin-latex "^0.1.0"
-    vuepress-plugin-shiki "^0.1.2"
-
 vuepress@^1.0.0-alpha.32:
   version "1.0.0-alpha.32"
   resolved "http://registry.npm.taobao.org/vuepress/download/vuepress-1.0.0-alpha.32.tgz#db19e7af222e585de3bab060d8fc90a40cb8923a"
