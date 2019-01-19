@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/vuepress-theme-jupiter.svg)](https://www.npmjs.com/package/vuepress-theme-jupiter)
 
+(WIP) ([Example here](https://vuepress-theme-jupiter.netlify.com))
+
 ## Install
 ```bash
 $ yarn add vuepress-theme-jupiter
