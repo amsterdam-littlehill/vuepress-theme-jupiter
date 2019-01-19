@@ -2,7 +2,8 @@
 // See https://vuepress.vuejs.org/theme/writing-a-theme.html
 
 module.exports = {
-  plugins: {
-    shiki: { theme: 'light_plus' }
-  }
+  plugins: [
+    [ 'shiki', { theme: 'light_plus' } ],
+    'latex'
+  ]
 }

@@ -23,3 +23,7 @@ And here is a `inline` code. Hey there!
   </section>
 </div>
 ```
+$f(x)$
+Hello
+$$ f(x) = g(x) $$
+$$ f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x) $$
