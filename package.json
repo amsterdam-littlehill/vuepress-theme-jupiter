@@ -29,5 +29,8 @@
     "vuepress": "^1.0.0-alpha.32",
     "vuepress-plugin-latex": "^0.1.0",
     "vuepress-plugin-shiki": "^0.1.2"
+  },
+  "devDependencies": {
+    "vuepress-theme-jupiter": "^0.1.0"
   }
 }
