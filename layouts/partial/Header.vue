@@ -7,7 +7,8 @@
         </div>
         <div class="navbar-menu">
           <div class="navbar-end">
-            <router-link v-for="item in $themeConfig.nav" :key="item.text" class="navbar-item" :to="item.link">{{ item.text }}</router-link>
+            <router-link class="navbar-item" v-for="item in $themeConfig.nav" :key="item.text" :to="item.link">{{ item.text }}</router-link>
+            <a class="navbar-item" :href="githubLink" v-if="githubLink">GitHub</a>
           </div>
         </div>
       </div>
@@ -17,7 +18,15 @@
 
 <script>
 export default {
-
+  computed: {
+    githubLink: function() {
+      return (
+        this.$themeConfig.github ?
+        "https://github.com/" + this.$themeConfig.github :
+        null
+      )
+    }
+  }
 }
 </script>
 
