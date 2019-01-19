@@ -12,3 +12,8 @@ svg.icon.outbound {
 .header-anchor {
   display: none;
 }
+
+/* List */
+.content ul ul {
+  margin-top: 0.25em;
+}

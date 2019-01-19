@@ -5,10 +5,9 @@ module.exports = {
   
   themeConfig: {
     brand: 'vuepress-theme-jupiter',
-    github: 'zlliang/vuepress-theme-jupiter'
-    // nav: [
-    //   { text: 'Guide', link: '/guide/' },
-    //   { text: 'Support', link: '/aupport/' }
-    // ]
+    github: 'zlliang/vuepress-theme-jupiter',
+    nav: [
+      { text: 'Guide', link: '/guide/' }
+    ]
   }
 }

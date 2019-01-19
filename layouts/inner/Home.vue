@@ -10,7 +10,7 @@
     </section>
     <section class="section">
       <div class="container">
-        <Content/>
+        <div class="content"><Content/></div>
       </div>
     </section>
   </div>
