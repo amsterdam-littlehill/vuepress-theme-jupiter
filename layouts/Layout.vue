@@ -3,6 +3,7 @@
     <Header/>
     <Home v-if="$frontmatter.layout=='home'"/>
     <Content v-else/>
+    <Footer/>
   </div>
 </template>
 
@@ -10,10 +11,11 @@
 import dayjs from 'dayjs'
 
 import Header from './partial/Header.vue'
+import Footer from './partial/Footer.vue'
 import Home from './inner/Home.vue'
 
 export default {
-  components: { Header, Home },
+  components: { Header, Footer, Home },
   created: function() {
     // Convert date string to dayjs object
     this.$site.pages.forEach(page => {
