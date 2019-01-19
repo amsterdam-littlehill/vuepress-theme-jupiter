@@ -1,17 +1,28 @@
 <template>
   <div class="page-container">
-    <section class="section">
-      <div class="container">
-        <div class="content">
-          <Content/>
-        </div>
-      </div>
-    </section>
+    <Header/>
+    <Home v-if="$frontmatter.layout=='home'"/>
+    <Content v-else/>
   </div>
 </template>
 
 <script>
-export default {}
+import dayjs from 'dayjs'
+
+import Header from './partial/Header.vue'
+import Home from './inner/Home.vue'
+
+export default {
+  components: { Header, Home },
+  created: function() {
+    // Convert date string to dayjs object
+    this.$site.pages.forEach(page => {
+      page.date = page.frontmatter.date ?
+        dayjs(page.frontmatter.date) :
+        dayjs(page.lastUpdated)
+    })
+  },
+}
 </script>
 
 <style src="@fortawesome/fontawesome-free/css/all.min.css"></style>

@@ -1,29 +1,19 @@
-# Vuepress Theme: Jupiter
+---
+layout: home
+---
 
-Hello
+## Install
+```bash
+$ yarn add vuepress-theme-jupiter
+```
+**Note:** VuePress supports themes from v1.0, which is now an alpha version, so you must install `vuepress@next` to use this plugin.
 
-```c
-#include <stdio.h>
-
-int main() {
-  printf("Hello, world!\n"); printf("Hello, world!\n"); printf("Hello, world!\n"); printf("Hello, world!\n"); printf("Hello, world!\n"); printf("Hello, world!\n"); printf("Hello, world!\n"); printf("Hello, world!\n");
-  return 0;
+## Usage
+Configure your VuePress site at `.vuepress/config.js`:
+```js
+module.exports = {
+  theme: 'jupiter' // or 'vuepress-theme-jupiter'
 }
 ```
-And here is a `inline` code. Hey there!
 
-```html
-<div class="page-container">
-  <section class="section">
-    <div class="container">
-      <div class="content">
-        <Content/>
-      </div>
-    </div>
-  </section>
-</div>
-```
-$f(x)$
-Hello
-$$ f(x) = g(x) $$
-$$ f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x)f(x) = g(x) $$
+See the [documentation of VuePress](https://vuepress.vuejs.org/theme/using-a-theme.html) for more information.
