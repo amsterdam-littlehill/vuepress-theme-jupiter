@@ -21,3 +21,5 @@ See the [documentation of VuePress](https://vuepress.vuejs.org/theme/using-a-the
 ## Features
 - Built-in $\LaTeX$ support
 - Code highlight by [octref/shiki](https://github.com/octref/shiki)
+
+![photo](photo.jpg)
