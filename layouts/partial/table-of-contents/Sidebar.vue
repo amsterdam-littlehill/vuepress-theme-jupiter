@@ -1,12 +1,77 @@
 <template>
   <div class="sidebar-container">
-    <!-- TODO -->
+    <ul class="sidebar-links">
+      <li v-for="(item, i) in sidebarItems" :key="i">
+        <SidebarGroup
+            v-if="item.type === 'group'"
+            :item="item"
+            :first="i === 0"
+            :open="i === openGroupIndex"
+            :collapsable="item.collapsable || item.collapsible"
+            @toggle="toggleGroup(i)"
+          />
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-export default {
+import { isActive, resolveSidebarItems } from './util'
+import SidebarGroup from './SidebarGroup.vue'
 
+export default {
+  components: { SidebarGroup },
+  data () {
+    return {
+      openGroupIndex: 0
+    }
+  },
+  computed: {
+    sidebarItems: function() {
+      return resolveSidebarItems(
+        this.$page,
+        this.$page.regularPath,
+        this.$site,
+        this.$localePath
+      );
+    }
+  },
+
+  created () {
+    this.refreshIndex()
+  },
+  watch: {
+    '$route' () {
+      this.refreshIndex()
+    }
+  },
+  methods: {
+    refreshIndex () {
+      const index = resolveOpenGroupIndex(
+        this.$route,
+        this.sidebarItems
+      )
+      if (index > -1) {
+        this.openGroupIndex = index
+      }
+    },
+    toggleGroup (index) {
+      this.openGroupIndex = index === this.openGroupIndex ? -1 : index
+    },
+    isActive (page) {
+      return isActive(this.$route, page.regularPath)
+    }
+  }
+}
+
+function resolveOpenGroupIndex (route, items) {
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i]
+    if (item.type === 'group' && item.children.some(c => isActive(route, c.path))) {
+      return i
+    }
+  }
+  return -1
 }
 </script>
 

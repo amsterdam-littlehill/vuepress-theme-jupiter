@@ -26,6 +26,10 @@ export default {
         dayjs(page.lastUpdated)
     })
   },
+  mounted: function() {
+    window.addEventListener('scroll', this.onScroll)
+    document.addEventListener("touchstart", function(){}, true)
+  }
 }
 </script>
 
