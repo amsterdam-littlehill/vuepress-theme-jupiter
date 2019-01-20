@@ -35,7 +35,7 @@ export default {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  z-index: 1000;
+  z-index: 10;
 }
 .site-brand {
   font-weight: bold;

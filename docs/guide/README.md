@@ -1,11 +1,11 @@
+---
+toc: true
+---
+
 # Guide
 
-## Sample $\LaTeX$ outout
-
-$$
-A = \begin{bmatrix}
-  \times & \times & \times \\
-  \times & \times & \times \\
-  \times & \times & \times
-\end{bmatrix}
-$$
+## Title 1
+### Subtitle 1
+### Subtitle 2
+## Title 2
+## Title 3
