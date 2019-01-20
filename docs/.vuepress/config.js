@@ -8,7 +8,6 @@ module.exports = {
     github: 'zlliang/vuepress-theme-jupiter',
     nav: [
       { text: 'Guide', link: '/guide/' }
-    ],
-    sidebar: 'auto'
+    ]
   }
 }

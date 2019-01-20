@@ -5,14 +5,11 @@
         <div class="content"><Content/></div>
       </div>
     </section>
-    <Toc v-if="$frontmatter.toc"/>
   </div>
 </template>
 
 <script>
-import Toc from '../partial/table-of-contents/Toc.vue'
 export default {
-  components: { Toc }
 }
 </script>
 
