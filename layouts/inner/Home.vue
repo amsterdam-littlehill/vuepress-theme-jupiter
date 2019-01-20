@@ -5,6 +5,12 @@
         <div class="container">
           <h1 class="title">{{ $site.title }}</h1>
           <p class="subtitle">{{ $site.description }}</p>
+          <div class="content" v-if="$frontmatter.intro">
+            <p v-if="typeof($frontmatter.intro)=='string'" v-html="$frontmatter.intro"></p>
+            <div v-else>
+              <p v-for="(para, i) in $frontmatter.intro" :key="i" v-html="para"></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
