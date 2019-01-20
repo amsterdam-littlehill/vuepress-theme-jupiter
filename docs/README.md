@@ -3,7 +3,7 @@ layout: home
 intro: 
   - <a href="https://www.npmjs.com/package/vuepress-theme-jupiter"><img src="https://img.shields.io/npm/v/vuepress-theme-jupiter.svg?style=flat-square"/></a>
   - Jupiter is a simple theme for VuePress. It uses bulma-jupiter CSS frameworks, supports LaTeX rendering, code syntax highlighting and many more features!
-  - <a><button class="button is-dark">Guide →</button></a>
+  - <a href="/guide/"><button class="button is-dark">Guide →</button></a>
 ---
 
 ## Install
