@@ -3,11 +3,14 @@
     <nav class="navbar is-primary">
       <div class="container">
         <div class="navbar-brand">
-          <router-link :to="$site.base" class="navbar-item"><span class="site-brand">{{ $themeConfig.brand }}</span></router-link>
+          <router-link :to="$site.base" class="navbar-item"><span class="site-brand" @click="forcedUntoggle">{{ $themeConfig.brand }}</span></router-link>
+          <div class="navbar-burger" :class="{ 'is-active': isActive }" data-target="main-navbar-menu" @click="toggle">
+            <span></span><span></span><span></span>
+          </div>
         </div>
-        <div class="navbar-menu">
+        <div class="navbar-menu" :class="{ 'is-active': isActive }" id="main-navbar-menu">
           <div class="navbar-end">
-            <router-link class="navbar-item" v-for="item in $themeConfig.nav" :key="item.text" :to="item.link">{{ item.text }}</router-link>
+            <router-link class="navbar-item" v-for="item in $themeConfig.nav" :key="item.text" :to="item.link"><div @click="forcedUntoggle">{{ item.text }}</div></router-link>
             <a class="navbar-item" :href="githubLink" v-if="githubLink">GitHub</a>
           </div>
         </div>
@@ -18,6 +21,11 @@
 
 <script>
 export default {
+  data: function() {
+    return {
+      isActive: false
+    }
+  },
   computed: {
     githubLink: function() {
       return (
@@ -25,6 +33,14 @@ export default {
         "https://github.com/" + this.$themeConfig.github :
         null
       )
+    }
+  },
+  methods: {
+    toggle: function() {
+      this.isActive = !this.isActive;
+    },
+    forcedUntoggle: function() {
+      this.isActive = false;
     }
   }
 }
@@ -39,5 +55,32 @@ export default {
 }
 .site-brand {
   font-weight: bold;
+}
+
+@media screen and (max-width: 751px) {
+  .navbar-menu {
+    /* background-color: #66bab7; */
+    max-height: 320px;
+    overflow-y: scroll;
+    transition: all 200ms cubic-bezier(0.4, 0, 0, 1);
+    display: block;
+    z-index: 5;
+    opacity: 0;
+    width: 65%;
+    right: -15px;
+    transform: translate(500px, 52px);
+    position: absolute;
+    top: 0px;
+  }
+  .navbar-menu.is-active {
+    box-shadow: 0 10px 15px -4px rgba(0, 0, 0, .5);
+    display: block;
+    opacity: 1;
+    transform: translate(0, 52px);
+    position: absolute;
+    top: 0px;
+    width: 65%;
+    right: -15px;
+  }
 }
 </style>

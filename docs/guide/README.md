@@ -64,3 +64,14 @@ intro:
   - Enjoy this!
 ---
 ```
+
+## Homepage logo
+You can put your logo at `.vuepress/public/path-to-yout-logo.png` and edit frontmatter of the root `README.md` file:
+```yaml
+---
+layout: home
+logo: path-to-yout-logo.png
+---
+
+# Your homepage contents
+```
