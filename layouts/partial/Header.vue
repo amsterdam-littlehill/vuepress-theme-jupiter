@@ -59,23 +59,15 @@ export default {
 
 @media screen and (max-width: 751px) {
   .navbar-menu {
-    /* background-color: #66bab7; */
     max-height: 320px;
     overflow-y: scroll;
-    transition: all 200ms cubic-bezier(0.4, 0, 0, 1);
-    display: block;
+    display: none;
     z-index: 5;
-    opacity: 0;
-    width: 65%;
-    right: -15px;
-    transform: translate(500px, 52px);
     position: absolute;
-    top: 0px;
   }
   .navbar-menu.is-active {
     box-shadow: 0 10px 15px -4px rgba(0, 0, 0, .5);
     display: block;
-    opacity: 1;
     transform: translate(0, 52px);
     position: absolute;
     top: 0px;
