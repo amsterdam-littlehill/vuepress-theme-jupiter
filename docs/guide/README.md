@@ -75,3 +75,14 @@ logo: path-to-yout-logo.png
 
 # Your homepage contents
 ```
+
+## Table of content support
+Table of content can be add to a page. Edit frontmatter of the root `README.md` file:
+```yaml
+---
+toc: true
+---
+
+# Your homepage contents
+```
+and TOC will appear. See [this page](/guide/toc-test.html) for example.

@@ -19,6 +19,10 @@ export default {
 }
 </script>
 
-<style>
+<style src="@fortawesome/fontawesome-free/css/all.min.css"></style>
+<style src="bulma-jupiter/dist/bulma-jupiter.min.css"></style>
+<style src="../styles/fix.css"></style>
 
+<style>
+@import url("https://fonts.proxy.ustclug.org/css?family=IBM+Plex+Sans:400,400i,600,600i|IBM+Plex+Mono");
 </style>
