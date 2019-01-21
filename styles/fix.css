@@ -1,3 +1,8 @@
+/* Disable grey highlight on iOS Safari */
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
 pre {
 	margin: 1em 0;
 	background-color: #f6f6f6 !important;
