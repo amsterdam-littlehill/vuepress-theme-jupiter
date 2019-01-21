@@ -27,7 +27,6 @@ export default {
     })
   },
   mounted: function() {
-    window.addEventListener('scroll', this.onScroll)
     document.addEventListener("touchstart", function(){}, true)
   }
 }
