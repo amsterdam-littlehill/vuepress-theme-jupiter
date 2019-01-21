@@ -1,6 +1,7 @@
 <template>
   <div class="toc-container" v-if="$frontmatter.toc">
     <transition name="toc-transition"><Sidebar v-show="isActive"/></transition>
+    <div class="toggle-mask" v-show="isActive" @click="isActive = false"></div>
     <button class="toc-button button is-primary" @click="isActive = !isActive">
       <transition name="toc-button-transition-contents"><span v-if="!isActive" class="toc-button-text">Contents</span></transition>
       <transition name="toc-button-transition-hide"><span v-if="isActive" class="toc-button-text">Hide</span></transition>
@@ -80,5 +81,14 @@ export default {
 .toc-button-transition-hide-leave-to {
   opacity: 0;
   transform: translate(-20px, 0);
+}
+
+.toggle-mask {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 25;
 }
 </style>
