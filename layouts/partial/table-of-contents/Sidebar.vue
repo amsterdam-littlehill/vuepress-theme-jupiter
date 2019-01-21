@@ -7,14 +7,8 @@
 </template>
 
 <script>
-import util from './util'
 export default {
-  mounted: function() {
-    util.toc()
-  }
 }
-
-find
 </script>
 
 <style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="toc-container">
+  <div class="toc-container" v-if="$frontmatter.toc">
     <transition name="toc-transition"><Sidebar v-show="isActive"/></transition>
     <button class="toc-button button is-primary" @click="isActive = !isActive">
       <transition name="toc-button-transition-contents"><span v-if="!isActive" class="toc-button-text">Contents</span></transition>
@@ -9,11 +9,21 @@
 </template>
 
 <script>
+import util from './util'
 import Sidebar from './Sidebar.vue'
 export default {
   components: { Sidebar },
   data: function() {
     return { isActive: false }
+  },
+  mounted() {
+    util.toc()
+  },
+  watch: {
+    '$route' () {
+      util.clear()
+      util.toc()
+    }
   }
 }
 </script>

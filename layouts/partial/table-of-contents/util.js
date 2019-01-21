@@ -1,5 +1,12 @@
 export default {
 
+  clear() {
+    var titleContainer = document.querySelector('.sidebar-title')
+    titleContainer.innerHTML = ""
+    var tocContainer = document.querySelector('.sidebar-links')
+    tocContainer.innerHTML = ""
+  },
+
   trim(item) {
     var text = item.childNodes[1].nodeValue.trim()
     text = document.createTextNode(text)

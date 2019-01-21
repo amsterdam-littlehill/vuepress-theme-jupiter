@@ -1,3 +1,6 @@
+---
+toc: true
+---
 # Guide
 
 Jupiter is a simple theme for VuePress. It uses bulma-jupiter CSS frameworks, supports LaTeX rendering, code syntax highlighting and many more features.
@@ -76,7 +79,7 @@ logo: path-to-yout-logo.png
 # Your homepage contents
 ```
 
-<!-- ## Table of content support
+## Table of content support
 Table of content can be add to a page. Edit frontmatter of the root `README.md` file:
 ```yaml
 ---
@@ -85,4 +88,4 @@ toc: true
 
 # Your homepage contents
 ```
-and TOC will appear. See [this page](/guide/toc-test.html) for example. -->
+and TOC will appear. See [this page](/guide/toc-test.html) for example.
